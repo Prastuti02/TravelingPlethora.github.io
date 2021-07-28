@@ -1,0 +1,48 @@
+#weekly-deal {
+    margin: px-to-rem(120) 0;
+    color: white;
+    h2 {
+        background-color: rgba(13, 13, 13, .52);
+        font-size: px-to-rem(36);
+        width: max-content;
+        padding: px-to-rem(42);
+        padding-left: px-to-rem(340);
+        padding-right: px-to-rem(160);
+        padding-bottom: px-to-rem(10);
+    }
+    #deal {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        #deal-details {
+            width: 30%;
+            padding-left: px-to-rem(180);
+            h3 {
+                font-size: px-to-rem(36);
+            }
+            p {
+                font-size: px-to-rem(16);
+                line-height: 180%;
+                margin: px-to-rem(20) 0 px-to-rem(32);
+            }
+            a {
+                text-decoration: underline;
+                &:hover {
+                    opacity: .6;
+                }
+            }
+        }
+        figure {
+            background-image: url(get-image("weekly deal.jpg"));
+            object-fit: none;
+            background-size: cover;
+            height: 576px;
+            width: 44%;
+            box-shadow: -4px 4px 14px 3px rgba(80, 80, 80, .44);
+            transition: all .5s;
+            &:hover {
+                transform: scale(1.06);
+            }
+        }
+    }
+}

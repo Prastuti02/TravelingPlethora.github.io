@@ -1,0 +1,33 @@
+#footer {
+    color: white;
+    background-color: rgba(13, 13, 13, .48);
+    padding: px-to-rem(40) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h5 {
+        font-size: px-to-rem(30);
+        margin: px-to-rem(30) 0;
+    }
+    hr {
+        width: 45%;
+        border: 1px solid $faint-white;
+        border-top: none;
+    }
+    h6 {
+        font-size: px-to-rem(16);
+        margin: px-to-rem(8) 0;
+    }
+    #social-icons {
+        padding: px-to-rem(16);
+        img {
+            width: px-to-rem(36);
+            padding: 0 px-to-rem(4);
+            transition: all .2s;
+        }
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
